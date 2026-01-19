@@ -30,4 +30,4 @@ View in browser:
 ```bash
 http://localhost:3000
 ```
-secret delete
+secret delete 
