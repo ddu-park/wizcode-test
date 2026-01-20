@@ -1,3 +1,6 @@
 {
-    "wiz.showOnlyPolicyMatches": false
+    "wiz.showOnlyPolicyMatches": false,
+    "wiz.codePolicies.secrets": [
+        "Default secrets policy"
+    ]
 }
