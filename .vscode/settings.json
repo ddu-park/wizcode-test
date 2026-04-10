@@ -2,5 +2,15 @@
     "wiz.showOnlyPolicyMatches": false,
     "wiz.codePolicies.secrets": [
         "Default secrets policy"
-    ]
+    ],
+
+    "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true
+    },
+    
+    "files.exclude": {
+        "**/node_modules/**": true,
+        "**/dist/**": true
+    }
 }
