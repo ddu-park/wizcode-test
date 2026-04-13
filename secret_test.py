@@ -1,0 +1,5 @@
+# secret_example.py
+AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE"
+AWS_SECRET_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+
+GITHUB_TOKEN = "ghp_1234567890abcdefghijklmnopqrstuvwxyz"
