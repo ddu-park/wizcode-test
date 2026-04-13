@@ -1,12 +1,12 @@
 
 resource "aws_s3_bucket" "test" {
   bucket = "wiz-test-public"
-  acl    = "public-read"
+  acl    = "private"
 }
 
 resource "aws_s3_bucket" "test2" {
   bucket = "wiz-test-public"
-  acl    = "public-read"
+  acl    = "private"
 }
 
 # wiz-scan ignore-block
