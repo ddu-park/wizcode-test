@@ -10,6 +10,9 @@ resource "aws_s3_bucket" "bad_bucket" {
 resource "aws_s3_bucket_public_access_block" "bad_block" {
   bucket = aws_s3_bucket.bad_bucket.id
 
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
   block_public_acls       = false
   block_public_policy     = false
   ignore_public_acls      = false
@@ -24,10 +27,10 @@ resource "aws_s3_bucket" "bad_bucket2" {
 resource "aws_s3_bucket_public_access_block" "bad_block2" {
   bucket = aws_s3_bucket.bad_bucket2.id
 
-  block_public_acls       = false
-  block_public_policy     = false
-  ignore_public_acls      = false
-  restrict_public_buckets = false
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
 }
 
 # 모든 IP 허용
