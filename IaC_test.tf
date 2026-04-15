@@ -1,10 +1,11 @@
+
 resource "aws_s3_bucket" "test" {
   bucket = "wiz-test-public"
   acl    = "public-read"
 }
 
 resource "aws_s3_bucket" "test2" {
-  bucket = "wiz-test2-public"
+  bucket = "wiz-test-public"
   acl    = "public-read"
 }
 
