@@ -9,6 +9,11 @@ resource "aws_s3_bucket" "test2" {
   acl    = "private"
 }
 
+resource "aws_s3_bucket" "test3" {
+  bucket = "wiz-test-public"
+  acl    = "private"
+}
+
 # wiz-scan ignore-block
 resource "google_storage_bucket" "example" {
   name          = "image-store.com"
