@@ -12,5 +12,8 @@
     "files.exclude": {
         "**/node_modules/**": true,
         "**/dist/**": true
-    }
+    },
+    "wiz.codePolicies.IAC Configuration": [
+        "Default IaC policy"
+    ]
 }
