@@ -16,19 +16,6 @@ resource "aws_s3_bucket_public_access_block" "bad_block" {
   restrict_public_buckets = false
 }
 
-# 퍼블릭 S3 버킷2
-resource "aws_s3_bucket" "bad_bucket2" {
-  bucket = "wiz-test-insecure-bucket-123456"
-}
-
-resource "aws_s3_bucket_public_access_block" "bad_block2" {
-  bucket = aws_s3_bucket.bad_bucket2.id
-
-  block_public_acls       = false
-  block_public_policy     = false
-  ignore_public_acls      = false
-  restrict_public_buckets = false
-}
 
 # 모든 IP 허용
 resource "aws_security_group" "bad_sg" {
